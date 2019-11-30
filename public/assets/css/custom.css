@@ -2,6 +2,14 @@
     width: 20%;
 }
 
+#versus {
+    width: 100%;
+}
+
 @media only screen and (max-width: 600px) {
     .image {width: 100%; margin-bottom: 5vh;}
+}
+
+@media only screen and (min-width: 601px) {
+    .card-content {height: 153px !important;}
 }
