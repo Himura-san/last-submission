@@ -1,0 +1,22 @@
+{
+    "name": "Submission 3",
+    "short_name": "E-FootIn",
+    "description": "Application Football Information",
+    "start_url": "./index.html",
+    "display": "standalone",
+    "gcm_sender_id": "721751893535",
+    "background_color": "#66BB6A ",
+    "theme_color": "#66BB6A ",
+    "icons": [
+        {
+            "src": "assets/images/icon.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "assets/images/icon.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ]
+}

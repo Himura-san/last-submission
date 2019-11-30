@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="manifest" href="./manifest.json">
+        <meta name="theme-color" content="#66BB6A "/>
+        <link rel="shortcut icon" href="assets/images/icon.png" type="image/x-icon">
+        <title>Submission 3 | App Football Information</title>
+        <meta name="description" content="First Submission - PWA"/>
+        <link rel="stylesheet" href="assets/css/custom.css">
+        <link rel="stylesheet" href="assets/css/materialize.min.css">
+        <link rel="stylesheet" href="assets/vendor/fontawesome-free-5.7.2-web/css/all.min.css">
+    </head>
+    <body class="grey lighten-5">
+        <nav class="green lighten-1" role="navigation">
+            <div class="nav-wrapper container">
+                <a href="#" class="brand-logo" id="logo-container">E-FootIn</a>
+                <a href="#" class="sidenav-trigger" data-target="nav-mobile">☰</a>
+                
+                <ul class="topnav right hide-on-med-and-down"></ul>
+                <ul class="sidenav" id="nav-mobile"></ul>
+            </div>
+        </nav>
+
+        <div id="body-content"></div>
+
+        <div id="informasiModal" class="modal">
+            <div class="modal-content">
+                <div class="row center-align">
+                    <h4>Informasi Club</h4>
+                </div>
+                <hr>
+                <div class="row center-align loader-modal hide">
+                    <div class="preloader-wrapper big active">
+                        <div class="spinner-layer spinner-green-only">
+                            <div class="circle-clipper left">
+                                <div class="circle"></div>
+                            </div><div class="gap-patch">
+                                <div class="circle"></div>
+                            </div><div class="circle-clipper right">
+                                <div class="circle"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row content-modal">
+                    <div class="col m5">
+                        <img id="crestUrl-Modal" width="100%">
+                    </div>
+                    <div class="col m7">
+                        <label>Nama Tim</label><br>
+                        <p style="width: 100%;" id="name-Modal"></p><br>
+                        <label>Singkatan</label><br>
+                        <p style="width: 100%;" id="shortName-Modal"></p><br>
+                        <label>Didirikan</label><br>
+                        <p style="width: 100%;" id="founded-Modal"></p><br>
+                        <label>Alamat</label><br>
+                        <p style="width: 100%;" id="address-Modal"></p><br>
+                        <label>Email</label><br>
+                        <p style="width: 100%;" id="email-Modal"></p><br>
+                        <label>Website</label><br>
+                        <p style="width: 100%;" id="website-Modal"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+              <a href="javascript:void(0);" class="modal-close waves-effect waves-green btn-flat">Close</a>
+            </div>
+        </div>
+        <script src="assets/vendor/jquery-3.3.1/js/jquery-3.3.1.min.js"></script>
+        <script src="assets/vendor/fontawesome-free-5.7.2-web/js/all.min.js"></script>
+        <script src="assets/js/materialize.min.js"></script>
+        <script src="assets/js/main.js"></script>
+        <script src="assets/vendor/idb-2.1.3/idb.js"></script>
+        <script src="assets/js/moment.js"></script>
+        <script src="assets/js/db.js"></script>
+        <script src="assets/js/nav.js"></script>
+        <script src="assets/js/api.js"></script>
+    </body>
+</html>
