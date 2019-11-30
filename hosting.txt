@@ -1,2 +1,2 @@
-Firebase Hosting : https://e-footin.firebaseapp.com/
+Firebase Hosting : https://e-footin.firebaseapp.com/ atau https://e-footin.web.app/
 Github Repository : https://github.com/Himura-san/last-submission

@@ -15,10 +15,10 @@ workbox.precaching.precacheAndRoute([
 
   "./assets/css/custom.css",
   "./assets/css/materialize.min.css",
-  "./assets/vendor/fontawesome-free-5.7.2-web/css/all.min.css",
+  "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css",
 
   "./assets/vendor/jquery-3.3.1/js/jquery-3.3.1.min.js",
-  "./assets/vendor/fontawesome-free-5.7.2-web/js/all.min.js",
+  "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js",
   "./assets/js/materialize.min.js",
   "./assets/vendor/idb-2.1.3/idb.js",
   "./assets/js/moment.js",
@@ -44,6 +44,7 @@ workbox.routing.registerRoute(
       cacheName: 'data-bola'
   })
 );
+
 
 workbox.routing.registerRoute(
   new RegExp('/assets/css'),
@@ -94,3 +95,24 @@ workbox.routing.registerRoute(
     ],
   })
 );
+
+self.addEventListener('push', function(event) {
+  var body;
+  if (event.data) {
+    body = event.data.text();
+  } else {
+    body = 'Push message no payload';
+  }
+  var options = {
+    body: body,
+  //   icon: 'img/notification.png',
+    vibrate: [100, 50, 100],
+    data: {
+      dateOfArrival: Date.now(),
+      primaryKey: 1
+    }
+  };
+  event.waitUntil(
+    self.registration.showNotification('E-FootIn', options)
+  );
+});
