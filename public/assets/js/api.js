@@ -284,10 +284,10 @@ function getJadwal() {
             }
 
             innerHtml += `
-              <div class="col s12 m4 l4 xl4">
-                <div class="card" style="min-height:230px;">
-                  <div class="card-content center-align">
-                    <p>
+              <div class="col s12 m4 l4 xl3">
+                <div class="card">
+                  <div class="card-content valign-wrapper">
+                    <p class="center-align" id="versus">
                       <b>${match.homeTeam.name}</b> ${favHome} <br> vs <br> <b>${match.awayTeam.name}</b> ${favAway} </br>
                     </p>
                   </div>
